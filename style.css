@@ -9,6 +9,7 @@
 body {
     height: 100vh;
     font-family: 'Koulen', cursive;
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -21,19 +22,30 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 a {
-    transition: all 0.4 ease;   
+    transition: all 1.3 ease;   
 }
+
+/* header */
 
 header {
     background: url(./img/shelby.jpg);
     background-size: cover;
     height: 100vh;
     background-position-x: left ;
-    filter: sepia(0.7)
+    filter: sepia(0.7);
+}
+
+img {
+    width: 100%;
 }
 
 .navbar {
     font-family: 'Koulen', cursive;
+}
+
+#navbarNav a:hover {
+    color: #e50914;
+     transform: scaleY(1.6);
 }
 
 
@@ -47,4 +59,21 @@ header {
     background-size: cover;
 }
 
+/*About*/
 
+#about {
+    height: 100vh;
+    background-color: rgba(24, 24, 24, 0.97);
+}
+
+#top-line, #bottom-line {
+    background-color: #e50914;
+    height: 2px;
+    margin: 0 auto;
+}
+
+#about h2 {
+    color: #fff3cb;
+    font-size: 40px;
+    letter-spacing: 6px;
+}
