@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+@font-face {
+    font-family: "Alycidon Cond";
+    src: url(./fonts/Alycidon-Condensed.otf);
+    format:(".otf");
+}
+
+body {
+    height: 100vh;
+    font-family: 'Koulen', cursive;
+}
+
+h1 {
+    font-size: 156px;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Alycidon Cond";
+}
+
+a {
+    transition: all 0.4 ease;   
+}
+
+header {
+    background: url(./img/shelby.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position-x: left ;
+    filter: sepia(0.7)
+}
+
+.navbar {
+    font-family: 'Koulen', cursive;
+}
+
+
+.container .navbar-brand {
+    background-image: url(./img/horseshoe.png);
+    text-align: center;
+    font-size: 0;
+    width: 35px;
+    height: 40px;
+    display: block;
+    background-size: cover;
+}
+
+
