@@ -90,14 +90,15 @@ header {
 
 #top-line, #bottom-line {
     background-color: #e50914;
-    height: 0px;
+    height: 2px;
     margin: 0 auto;
-    animation: line-apparition 2s 2s;
+    animation: line-apparition 1.3s 1.5s forwards;
+    opacity: 0;
 }
 
 @keyframes line-apparition {
     to {
-        height: 2px;
+        opacity: 1;
     }
 }
 
@@ -106,7 +107,7 @@ header {
     color: #fff3cb;
     font-size: 40px;
     letter-spacing: 6px;
-    animation: apparition-title 3s;
+    animation: apparition-title 1.3s;
 }
 
 @keyframes apparition-title {
@@ -121,15 +122,31 @@ header {
     }
 }
 
-img {
+@keyframes filter-animation {
+    to {
+        filter: grayscale(1);
+    }
+    
+}
+
+
+#about img {
     object-fit: cover;
     max-height: 250px;
     min-height: 250px;
+    filter: grayscale(0);
+    animation: filter-animation 2s forwards 2s;
 }
 .card {
- border-color: #e50914;
- background-color: rgba(24, 24, 24, 0.97);
+    border-color: rgba(24, 24, 24, 0.97);
+    background-color: rgba(24, 24, 24, 0.97);
+    animation: border-apparition 1.3s forwards 2s;
+}
 
+@keyframes border-apparition {
+    to {
+        border-color: #e50914;
+    }
 }
 
 .card-text h2 {
@@ -138,4 +155,29 @@ img {
 }
 .card-body {
     background-color: rgba(24, 24, 24, 0.97);
+}
+
+/* Galery */
+
+#galery {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(24, 24, 24, 0.97);
+}
+
+#carouselExampleControls {
+    min-width: 80%;
+}
+
+#carouselExampleControls img {
+    object-fit: cover;
+    height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.carousel-item {
+    transition: 1.3s ease-in-out;
 }
