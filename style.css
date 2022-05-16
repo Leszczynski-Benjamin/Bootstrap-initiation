@@ -129,14 +129,15 @@ header {
     
 }
 
-
 #about img {
     object-fit: cover;
     max-height: 250px;
     min-height: 250px;
     filter: grayscale(0);
     animation: filter-animation 2s forwards 2s;
+    
 }
+
 .card {
     border-color: rgba(24, 24, 24, 0.97);
     background-color: rgba(24, 24, 24, 0.97);
@@ -165,10 +166,21 @@ header {
     align-items: center;
     justify-content: center;
     background-color: rgba(24, 24, 24, 0.97);
+    box-shadow: inset 0 0 0px 0px black;
+    animation: galery-anim 1.3s ease-out forwards;
+}
+
+@keyframes galery-anim {
+    to {
+    box-shadow: inset 0 0 108px 50px black;
+    }
 }
 
 #carouselExampleControls {
     min-width: 80%;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 16px black;
 }
 
 #carouselExampleControls img {
@@ -179,5 +191,5 @@ header {
 }
 
 .carousel-item {
-    transition: 1.3s ease-in-out;
+    transition: 1.3s ease-in-out; 
 }
