@@ -86,6 +86,7 @@ header {
 #about {
     height: 100vh;
     background-color: rgba(24, 24, 24, 0.97);
+    box-shadow: inset 0px 0px 55px 18px black;
 }
 
 #top-line, #bottom-line {
@@ -192,4 +193,44 @@ header {
 
 .carousel-item {
     transition: 1.3s ease-in-out; 
+}
+
+/* Contact */
+
+#contact {
+    background: url(./img/fond.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    box-shadow: inset 0px 0px 55px 18px black;
+}
+
+#contact h2 {
+    font-size: 90px;
+    letter-spacing: 7px;
+}
+
+#contact p {
+    font-size: 30px;
+    color: #fff3cb;
+}
+
+#contact h3 {
+    color: rgba(255, 243, 203, 0.7);
+    font-size: 55px;
+    letter-spacing: 2px;
+    background-color: rgba(24, 24, 24, 0.97);
+    animation: img-apparition 1.3s ease-in forwards;
+    opacity: 0;
+}
+
+#contact img {
+   height: 383px;
+   opacity: 0;
+   animation: img-apparition 1.3s ease-in 1s forwards;
+}
+
+@keyframes img-apparition {
+    to {
+        opacity: 1;
+    }
 }
