@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-    font-size: 156px;
+    font-size: 156px; 
     animation: apparition-left 3s ease-out;
     letter-spacing: 10px;
 }
@@ -133,7 +133,6 @@ header {
 #about img {
     object-fit: cover;
     max-height: 250px;
-    min-height: 250px;
     filter: grayscale(0);
     animation: filter-animation 2s forwards 2s;
     
@@ -232,5 +231,15 @@ header {
 @keyframes img-apparition {
     to {
         opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    #about img {
+        max-height: 100px;
+    }
+    #contact img {
+        max-height: 200px;
     }
 }
